@@ -1,0 +1,35 @@
+/* Header */
+
+/* Carousel */
+.my-carousel {
+    background-color:white;
+  
+}
+
+.my-carousel .carousel-item {
+
+	max-height: 800px;
+
+}
+
+.my-carousel .carousel-item img {
+	object-fit: cover;
+   
+   
+}
+/* Carousel */
+
+.carousel-caption h5 {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 580;
+}
+.carousel-caption p {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 580;
+}
