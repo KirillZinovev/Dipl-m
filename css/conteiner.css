@@ -18,14 +18,14 @@
 .carousel-caption h5 {
     text-decoration: none;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Tauri', sans-serif;
     font-size: 20px;
     font-weight: 580;
 }
 .carousel-caption p {
     text-decoration: none;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Tauri', sans-serif;
     font-size: 20px;
     font-weight: 580;
 }
@@ -34,7 +34,7 @@
     top: 250px;
     background-color: rgba(1, 14, 83, 0.527);
     color: white;
-    max-width: 400px;
+    max-width: 420px;
     left: 35px;
   }
   .slider-title-head {

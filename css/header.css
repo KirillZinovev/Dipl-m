@@ -1,7 +1,19 @@
 
+header {
+    background-color: white;
+}
+
+body {
+    font-family: 'Tauri', sans-serif;
+    list-style-type: none;
+}
+strong.txt {
+    font-size: 20px;
+}
+
 .navbar-brand {
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 250px;
+    max-width: 250px;
     
 
 }
@@ -12,7 +24,7 @@
 }
 .nav-item {
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Tauri', sans-serif;
     font-size: 20px;
     font-weight: 580;
 }
@@ -22,39 +34,12 @@ h5 {
    padding: 4px; 
 }
 
-.btn-hover {
-    margin: 20px;
-    height: 45px;
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(3, 0, 0);
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    text-align:center;
-    border: none;
-    background-size: 300% 100%;
-    border-radius: 50px;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+.nav-item a{
+    font-family: 'Tauri', sans-serif;
 }
 
-.btn-hover:hover {
-    background-position: 100% 0;
 
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
 
-.btn-hover:focus {
-    outline: none;
-}
-.btn-hover.color-2 {
-    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-}
 
 
 
