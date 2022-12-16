@@ -1,42 +1,69 @@
 
-header {
-    background-color: white;
-}
-
 body {
     font-family: 'Tauri', sans-serif;
-    list-style-type: none;
-}
-strong.txt {
-    font-size: 20px;
-}
-
-.navbar-brand {
-    max-height: 250px;
-    max-width: 250px;
+       
+        list-style-type:none;
+    }
     
-
-}
-
-.nav-item a:hover{
-    opacity: 0.5;
+    .navbar{
+        background: white;
+        font-size: 19px;
+    } 
+    
+    .navbar-brand {
+        max-width: 220px;
+        max-height: 220px;
+    }
+    
+    .nav-item a {
+        color: black;
+        font-weight: 400;
+    }
+    .nav-item a:hover{
+        opacity: 0.8;
+        color: #3047ccef;
+    }
    
+    
+    p.text10sec { 
+    font-size: 15px;
+    }
+    .nn {
+        margin-top: 15px;
+        margin-right: 20px;
+        width: 30px;
+    }
+    .nav-link {
+    color: #00bfff; 
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    }
+
+.nav-link:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    background-color: black; 
+    transition: width 0.5s; 
 }
-.nav-item {
-    color: black;
-    font-family: 'Tauri', sans-serif;
-    font-size: 20px;
-    font-weight: 580;
+.nav-link:hover::after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; 
+    background-color: rgb(0, 47, 255); 
+    transition: width 0.5s;
 }
 
 
-h5 {
-   padding: 4px; 
-}
 
-.nav-item a{
-    font-family: 'Tauri', sans-serif;
-}
 
 
 

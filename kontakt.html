@@ -4,37 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script
+      src="https://kit.fontawesome.com/5833c2855b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="./css/conteiner.css" />
     <link rel="stylesheet" href="./css/conteiner2.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="/css/conteiner kontakti.css" />
+    <link rel="stylesheet" href="/css/kontakti.css" />
     <link rel="icon" href="/img/123.ico" type="image/ico" />
-    <link rel="stylesheet" href="/avtorizatia.css" />
+    <link rel="stylesheet" href="/css/avtorizatia.css" />
+    <link rel="stylesheet" href="/css/avtorizatia-reg.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Tauri&display=swap"
       rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-      crossorigin="anonymous"
     />
     <title>Информ Сервис</title>
   </head>
   <body>
-    <header id="header ">
-      <nav class="navbar navbar-expand-xl navbar-light bg-light">
+    <header id="header" class="fixed-top">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
+          <div class="nn">
+            <audio id="zvuk" src="/1.mp3"></audio>
+            <p class="text10sec"></p>
+          </div>
           <a href="/index.html">
-            <img class="navbar-brand" src="/img/logoza1.png" alt="" />
-            <audio id="zvuk" src="/0.mp3"></audio>
-          </a>
+            <img src="/img/logoza1.png" class="navbar-brand" alt=""
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -48,76 +65,161 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item pe-5">
-                <a class="nav-link text-primary" href="/index.html">Главная</a>
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="/index.html">Главная</a>
               </li>
-              <li class="nav-item pe-5">
-                <a
-                  class="nav-link text-primary"
-                  aria-current="page"
-                  href="/o nas.html"
-                  >О Нас</a
-                >
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="/o nas.html">О Нас</a>
               </li>
-              <li class="nav-item pe-5">
-                <a class="nav-link text-primary" href="/kontakt.html"
-                  >Контакты</a
-                >
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="/kontakt.html">Контакты</a>
               </li>
-              <li class="nav-item pe-5">
-                <a class="nav-link text-primary" href="/gde nas naiti.html"
-                  >Расположение</a
-                >
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="/gde nas naiti.html">Расположение</a>
               </li>
-              <li class="nav-item pe-5">
-                <a class="nav-link text-primary" href="/grafik raboti.html"
-                  >График работы</a
-                >
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="/grafik raboti.html">График работы</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <button
-                type="button"
-                class="btn-hover color-2 p-1"
-                data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop"
-              >
-                <h5>Авторизация</h5>
-              </button>
-            </form>
+            <li class="nav-item px-3">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"
+                    ><i class="fa fa-user-o" aria-hidden="true"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledy="navbarDropdown">
+                    <li>
+                      <a href="/avtorizatia.html" class="dropdown-item"
+                        >Регистрация</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/avtorizatia-reg.html" class="dropdown-item"
+                        >Авторизация</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <div class="footer-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://vk.com/infservice"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
           </div>
         </div>
       </nav>
     </header>
-    <!-- <div class="container">
+    <div class="container">
       <p class="text-inform text-center" href="/grafik raboti.html">
         Контакты Информ Сервис
       </p>
-    </div> -->
-    <div class="container">
-      <div class="row">
+    </div>
+    <div class="container text-center justify-content-center">
+      <div class="row justify-content-center">
         <div class="gg col-md-6 col-12">
           <h4>Наш адрес</h4>
-          <img class="" src="/img/8.png" alt="" />
+          <img class="geoteg" src="/img/8.png" alt="" />
           <div class="col-md-12 col-12">
             <a href="/gde nas naiti.html"
               >188800, область Ленинградская, р-н Выборгский, г. Выборг, ул.
               Куйбышева, д.9</a
             >
           </div>
+          <hr />
+          <h4>E-mail</h4>
+          <img class="sobaka" src="/img/9.png" alt="" />
+          <a href="email:info@informbalans.ru">info@informbalans.ru</a>
         </div>
+        <div class="col-md-1"></div>
 
         <div class="hh col-md-6 col-12">
-          <h4>Контакты</h4>
-          <hr class="hr" />
-          <ul class="list-unstyled">
-            <li><a href="tel:+7 921 595-52-12">+7 921 595-52-12</a></li>
-            <li><a href="tel:+7 905 266-12-85">+7 905 266-12-85</a></li>
-            <li><a href="tel:+7 952 227-37-29">+7 952 227-37-29</a></li>
-            <li><a href="tel:+7 911 093-32-18">+7 911 093-32-18</a></li>
-          </ul>
+          <h4>Бесплатный телефон по всей России</h4>
+          <div class="kk">
+            <div class="kart">
+              <img class="trubka" src="/img/10.png" alt="" />
+            </div>
+            <div class="nomera">
+              <a href="tel:+7 921 595-52-12">+7 921 595-52-12</a>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-md-4 col-12">
+              <h4>Санкт-Петербург</h4>
+              <li><a href="tel:+7 812 209-27-97">+7 (812) 209-27-97</a></li>
+              <h4>Екатеринбург</h4>
+              <li><a href="tel:+7 343 302-27-97">+7 (343) 302-27-97</a></li>
+            </div>
+            <div class="col-md-4 col-12">
+              <h4>Москва</h4>
+              <li><a href="tel:+7 495 109-27-97">+7 (495) 109-27-97</a></li>
+              <h4>Ростов-на-Дону</h4>
+              <li><a href="tel:+7 863 309-27-97">+7 (863) 309-27-97</a></li>
+            </div>
+            <div class="col-md-4 col-12">
+              <h4>Барнаул</h4>
+              <li><a href="tel:+7 3852 59-50-97">+7 (3852) 59-50-97</a></li>
+              <h4>Новосибирск</h4>
+              <li><a href="tel:+7 383 312-27-97">+7 (383) 312-27-97</a></li>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+    <hr />
+    <div class="container">
+      <p class="text-nam text-center" href="/grafik raboti.html">
+        Напишите нам
+      </p>
+    </div>
+    <div class="container">
+      <div class="row mb-4 mt-4 g-2">
+        <div class="a form-floating col-sm-4">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Ваше имя</label>
+        </div>
+        <div class="a form-floating col-sm-4">
+          <input
+            type="tel"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Номер телефона</label>
+        </div>
+        <div class="a form-floating col-sm-4 pb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">E-mail</label>
+        </div>
+        <div class="d form-floating col-sm-10 pb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Сообщение</label>
+        </div>
+
+        <button class="but" type="button">Отправить</button>
+      </div>
+      <h6>
+        Нажимая кнопку «Отправить», я даю согласие на обработку своих
+        персональных данных и соглашаюсь с политикой конфиденциальности
+      </h6>
     </div>
 
     <footer>
@@ -172,105 +274,5 @@
         </div>
       </section>
     </footer>
-
-    <div
-      class="modal fade"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Регистрация</h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Закрыть"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="floatingInput">Имя</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="Имя"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="floatingPassword">Фамилия</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="floatingPassword"
-                  placeholder="Фамилия"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="floatingPassword">Дата рождения</label>
-                <input
-                  type="date"
-                  class="form-control"
-                  id="floatingPassword"
-                  placeholder="Пароль"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="floatingInput">Адрес электронной почты</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="name@example.com"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="floatingPassword">Пароль</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="floatingPassword"
-                  placeholder="Пароль"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="floatingPassword">Повторите пароль</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="floatingPassword"
-                  placeholder="Пароль"
-                />
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Закрыть
-            </button>
-            <button type="button" class="btn btn-primary">
-              Авторизоваться
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
