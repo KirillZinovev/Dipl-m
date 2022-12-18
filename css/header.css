@@ -11,8 +11,8 @@ body {
     } 
     
     .navbar-brand {
-        max-width: 220px;
-        max-height: 220px;
+        max-width: 200px;
+        max-height: 200px;
     }
     
     .nav-item a {
@@ -26,12 +26,12 @@ body {
    
     
     p.text10sec { 
-    font-size: 15px;
+    font-size: 12px;
     }
     .nn {
-        margin-top: 15px;
+        margin-top: 10px;
         margin-right: 20px;
-        width: 30px;
+        width: 10px;
     }
     .nav-link {
     color: #00bfff; 
