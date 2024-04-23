@@ -1,0 +1,74 @@
+/* General button style */
+.bts {
+	border: none;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 15px 15px;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	margin-bottom: 1px;
+	font-size: 16px;
+	border-radius: 10px;
+}
+
+.bts:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.bts:before {
+	font-family: 'FontAwesome';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+
+.btn-sep:before {
+	background: rgba(0,0,0,0.15);
+}
+
+
+.btn-1 {
+	background: #666e74;
+	color: #fff;
+}
+
+.btn-1:hover {
+	background: #0e0d0dd7;
+    color: #fff;
+}
+
+.btn-1:active {
+	background: #e5eaee;
+	top: 2px;
+}
+
+.btn-1:before {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	line-height: 3;
+	font-size: 140%;
+	width: 60px;
+}
+
+
+

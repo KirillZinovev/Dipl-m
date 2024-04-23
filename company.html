@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/5833c2855b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    
+    <link rel="stylesheet" href="./css/button-map.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/conteiner.css" />
+    <link rel="stylesheet" href="./css/conteiner2.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="icon" href="./img/123.ico" type="image/ico" />
+    <link rel="stylesheet" href="./css/company.css" />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tauri&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="./vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="./vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Металл-Строй</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="img-loga">
+            <a href="./index.html">
+              <img src="./img/logozaf.png" class="navbar-brand" alt=""
+            /></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="./index.html">Главная</a>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="./company.html">О Компании</a>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="./contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <button class="bts btn-1 btn-sep icon-maps"
+            type="button"
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">
+              <i class="fa-solid fa-map-location-dot"></i>
+              Расположение</button>
+
+            <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+            
+          >
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <i class="fa-solid fa-location-dot fa-xl pe-3 " style="color: #dab80b;"></i>
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Корп. 1, наб. реки Екатерингофки, 18<br> Санкт-Петербург, 198035
+                  </h1>
+                  
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.4327319676263!2d30.24447548717762!3d59.901332417314286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630987ac1f2b9%3A0x427737570a7adb7b!2z0JzQtdGC0LDQu9C70L7RgdGC0YDQvtC5!5e0!3m2!1sru!2sru!4v1713608478101!5m2!1sru!2sru" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="hero" class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <h1 data-aos="fade-up">Компания Металл-Строй</h1>
+            <h2 data-aos="fade-up" data-aos-delay="400">
+              Мы специализируемся на изготовлении высококачественных конструкций
+              с помощью новых технологий
+            </h2>
+            <div data-aos="fade-up" data-aos-delay="600">
+              <div class="text-center text-lg-start">
+                <a
+                  href="#about"
+                  class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center"
+                >
+                  <span>Далее</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 hero-img"
+            data-aos="zoom-out"
+            data-aos-delay="200"
+          >
+            <img src="./img/hero-img.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="row gx-0">
+            <div
+              class="col-lg-6 d-flex flex-column justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="content">
+                <h3>Кто мы?</h3>
+                <h2>
+                  Мы производим металлоконструкции любой сложности на заказ по
+                  чертежам заказчика.
+                </h2>
+                <p>
+                  Изготовление изделий выполняется в строгом соответствии с
+                  техническим заданием. Реализуем заказы в самые сжатые сроки.
+                  Стоимость завистит от сложности и объёма работ. Существует
+                  система скидок для постоянных клиентов.
+                </p>
+                <div class="text-center text-lg-start">
+                  <a
+                    href="#values"
+                    class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
+                  >
+                    <span>Далее</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-6 d-flex align-items-center"
+              data-aos="zoom-out"
+              data-aos-delay="200"
+            >
+              <img src="./img/about.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Values Section ======= -->
+      <section id="values" class="values">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <p>Завершённые проекты</p>
+          </header>
+
+          <div class="row">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="box">
+                <img src="./img/values-1.jpeg" class="img-fluid" alt="" />
+                <h3>Изготовлен каркас здания складского назначения</h3>
+                <a class="btr btn-1 btn-sep icon-maps"
+                type="button"
+                href="./contacts.html"
+                >
+               
+                Узнать подробности</a>
+               
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="box">
+                <img src="./img/values-2.png" class="img-fluid" alt="" />
+                <h3>Изготовлены первые остановочные комплексы</h3>
+                <a class="btr btn-1 btn-sep icon-maps"
+                type="button"
+                href="./contacts.html"
+                >
+               
+                Узнать подробности</a>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="box">
+                <img src="./img/values-3.jpg" class="img-fluid" alt="" />
+                <h3>Отгрузка 120 металлических Фан-барьеров</h3>
+                <a class="btr btn-1 btn-sep icon-maps"
+                type="button"
+                href="./contacts.html"
+                >
+               
+                Узнать подробности</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Values Section -->
+
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts">
+        <div class="container" data-aos="fade-up">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-emoji-smile"></i>
+                <div>
+                  <h2>33</h2>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="232"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Довольные клиенты</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-journal-richtext" style="color: #ee6c20"></i>
+                <div>
+                  <h2>45</h2>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="521"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Проекты</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-headset" style="color: #15be56"></i>
+                <div>
+                  <h2>24/7</h2>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="1463"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Часы Работы Поддержки</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-people" style="color: #bb0852"></i>
+                <div>
+                  <h2>1</h2>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="15"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Создатель Сайта</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Counts Section -->
+
+      <!-- ======= Features Section ======= -->
+      <section id="features" class="features">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <p>Только факты о работе нашей компании</p>
+          </header>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="./img/features.png" class="img-fluid" alt="" />
+            </div>
+
+            <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+              <div class="row align-self-center gy-4">
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>ЦЕНА НИЖЕ РЫНКА В СРЕДНЕМ НА 15%</h3>
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>
+                      ГАРАНТИРОВАННЫЕ СРОКИ РЕАЛИЗАЦИИ ПРОЕКТА ИЛИ ВОЗВРАТ
+                      СРЕДСТВ
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>ПОЛНЫЙ КОНТРОЛЬ НАД ПРОЕКТОМ</h3>
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>БЫСТРАЯ И КАЧЕСТВЕННАЯ ДОСТАВКА</h3>
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>ОТВЕЧАЕМ НА ЛЮБЫЕ ВОПРОСЫ В ТЕЧЕНИИ 30 МИНУТ</h3>
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>КАЧЕСТВЕННОЕ ПРОИЗВОДСТВО</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- / row -->
+
+          <!-- Feature Tabs -->
+          <div class="row feture-tabs" data-aos="fade-up">
+            <div class="col-lg-6">
+              <h3>Основные показатели финансовой отчётности компании</h3>
+
+              <!-- Tabs -->
+              <ul class="nav nav-pills mb-3">
+                <li>
+                  <a class="nav-link active" data-bs-toggle="pill" href="#tab1">
+                    2021 год
+                  </a>
+                </li>
+                <li>
+                  <a class="nav-link" data-bs-toggle="pill" href="#tab2">
+                    2022 год
+                  </a>
+                </li>
+                <li>
+                  <a class="nav-link" data-bs-toggle="pill" href="#tab3">
+                    2023 год
+                  </a>
+                </li>
+              </ul>
+              <!-- End Tabs -->
+
+              <!-- Tab Content -->
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab1">
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Выручка компании ООО Металл-Строй</h4>
+                  </div>
+                  <p>
+                    Компания заработала около 8,7 млн. рублей (чистая прибыль
+                    компании составила около 1.9 млн. рублей). Выполнив 21
+                    крупных заказов от разных фирм.
+                  </p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Капитал компании ООО Металл-Строй</h4>
+                  </div>
+                  <p>Капитал компании составил 4 млн. рублей.</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Баланс компании ООО Металл-Строй</h4>
+                  </div>
+                  <p>Баланс компании составил 4.8 млн. рублей.</p>
+                </div>
+                <!-- End Tab 1 Content -->
+
+                <div class="tab-pane fade show" id="tab2">
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Выручка компании ООО Металл-Строй</h4>
+                  </div>
+                  <p>
+                    Компания заработала около 8,2 млн. рублей (чистая прибыль
+                    компании составила около 950 тыс. рублей). Выполнив 16
+                    крупных заказов от разных фирм.
+                  </p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Капитал компании ООО Металл-Строй</h4>
+                  </div>
+                  <p>Капитал компании составил 4.7 млн. рублей.</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Баланс компании ООО Металл-Строй</h4>
+                  </div>
+                  <p>Баланс компании составил 6 млн. рублей.</p>
+                </div>
+                <!-- End Tab 2 Content -->
+
+                <div class="tab-pane fade show" id="tab3">
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Выручка компании ООО Металл-Строй</h4>
+                  </div>
+                  <p>
+                    Компания заработала около 6,3 млн. рублей (чистая прибыль
+                    компании составила около 880 тыс. рублей). Выполнив 8
+                    крупных заказов от разных фирм.
+                  </p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Капитал компании ООО Металл-Строй</h4>
+                  </div>
+                  <p>Капитал компании составил 5.4 млн. рублей.</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Баланс компании ООО Металл-Строй</h4>
+                  </div>
+                  <p>Баланс компании составил 6.5 млн. рублей.</p>
+                </div>
+                <!-- End Tab 3 Content -->
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <img src="./img/features-2.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <!-- End Feature Tabs -->
+
+      <!-- ======= F.A.Q Section ======= -->
+      <section id="faq" class="faq">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <h2>F.A.Q</h2>
+            <p>Часто задаваемые вопросы</p>
+          </header>
+          <div class="row">
+            <div class="col-lg-6">
+              <!-- F.A.Q List 1-->
+              <div class="accordion accordion-flush" id="faqlist1">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq-content-1"
+                    >
+                      Почему нет цены на продукцию на сайте?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-content-1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist1"
+                  >
+                    <div class="accordion-body">
+                      Техническое задание у каждого запроса разное: конструктив
+                      по ГОСТ или СТО, вес конструктива, антикоррозийное
+                      покрытие, дополнительны элементы конструкции и другие
+                      параметры. От них складывается окончательная стоимость
+                      продукции.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq-content-2"
+                    >
+                      Какой материал вы используете для изготовления
+                      металлоконструкций?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-content-2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist1"
+                  >
+                    <div class="accordion-body">
+                      Мы используем различные виды металла в зависимости от
+                      требований к конкретному изделию. Это может быть сталь,
+                      нержавеющая сталь, алюминий и другие материалы.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq-content-3"
+                    >
+                      Какие металлоконструкции вы изготавливаете?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-content-3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist1"
+                  >
+                    <div class="accordion-body">
+                      Мы изготавливаем различные типы изделий из металла,
+                      включая металлические рамы, навесы, ограждения, лестницы и
+                      многое другое. Наша команда экспертов обладает широким
+                      опытом в проектировании и изготовлении металлоконструкций,
+                      и мы можем выполнить любые индивидуальные заказы.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <!-- F.A.Q List 2-->
+              <div class="accordion accordion-flush" id="faqlist2">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2-content-1"
+                    >
+                      Доставка осуществляется по всей России?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq2-content-1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist2"
+                  >
+                    <div class="accordion-body">
+                      Мы работаем с крупными логистическими компаниями это
+                      позволяет нам делать для Вас лучшую цену и своевременную
+                      доставку на объект по всей России.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2-content-2"
+                    >
+                      Можно ли заказать металлоконструкцию по индивидуальным
+                      размерам?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq2-content-2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist2"
+                  >
+                    <div class="accordion-body">
+                      Да, мы можем изготовить металлоконструкцию по
+                      индивидуальным размерам. Вы можете предоставить нам точные
+                      требования и мы изготовим изделие, соответствующее вашим
+                      потребностям.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2-content-3"
+                    >
+                      Согласно каким нормативным документам вы производите
+                      барьерное и мостовое ограждение?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq2-content-3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist2"
+                  >
+                    <div class="accordion-body">
+                      Металл-Строй производит барьерное и мостовое ограждение по
+                      ГОСТ и СТО. Конструктив согласовывается с заказчиком на
+                      стадии уточнения заказа.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End F.A.Q Section -->
+    </main>
+
+    <footer>
+      <section class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3 col-12 text-center">
+              <a href="./index.html">
+                <img class="footer-bar" src="./img/logozar.png" alt="" />
+              </a>
+            </div>
+
+            <div class="col-md-3 col-12">
+              <h4>Информация</h4>
+              <hr class="hr" />
+              <ul class="list-unstyled">
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./company.html">О Компании</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 col-12">
+              <h4>Контакты</h4>
+              <hr class="hr" />
+              <ul class="list-unstyled">
+                <li><a href="tel:+7 921 595-52-12">+7 921 595-52-12</a></li>
+                <li><a href="tel:+7 905 266-12-85">+7 905 266-12-85</a></li>
+                <li><a href="tel:+7 952 227-37-29">+7 952 227-37-29</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 col-12">
+              <h4>Мы в сети</h4>
+              <hr class="hr" />
+              <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"
+                  ><i class="fab fa-vk"></i
+                ></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <h1 class="h1 text-center">
+              2003-2024 © Компания Металл-Строй. Все права защищены
+            </h1>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

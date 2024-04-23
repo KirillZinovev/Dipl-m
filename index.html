@@ -24,34 +24,27 @@
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
-
+    <link rel="stylesheet" href="./css/button-map.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/conteiner.css" />
     <link rel="stylesheet" href="./css/conteiner2.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="icon" href="./img/123.ico" type="image/ico" />
-    <link rel="stylesheet" href="./css/avtorizatia.css" />
-    <link rel="stylesheet" href="./css/karta.css" />
-    <link rel="stylesheet" href="./css/uslugi.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Tauri&display=swap"
       rel="stylesheet"
     />
-    <title>Информ Сервис</title>
+    <title>Металл-Строй</title>
   </head>
   <body style="height: 1000px">
-    <header id="header" class="fixed-top">
+    <!-- <header id="header" class="fixed-top"> -->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <div class="nn">
-            <audio id="zvuk" src="./mp3/1.mp3"></audio>
-            <p class="text10sec"></p>
-          </div>
           <div class="img-logo">
             <a href="./index.html">
-              <img src="./img/logoza1.png" class="navbar-brand" alt=""
+              <img src="./img/logozaf.png" class="navbar-brand" alt=""
             /></a>
           </div>
           <button
@@ -71,44 +64,51 @@
                 <a class="nav-link" href="./index.html">Главная</a>
               </li>
               <li class="nav-item pe-3">
-                <a class="nav-link" href="./o nas.html">О Нас</a>
+                <a class="nav-link" href="./company.html">О Компании</a>
               </li>
               <li class="nav-item pe-3">
-                <a class="nav-link" href="./kontakt.html">Контакты</a>
-              </li>
-              <li class="nav-item pe-3">
-                <a class="nav-link" href="./gde nas naiti.html">Расположение</a>
-              </li>
-              <li class="nav-item pe-3">
-                <a class="nav-link" href="./uslugi.html">Услуги</a>
+                <a class="nav-link" href="./contacts.html">Контакты</a>
               </li>
             </ul>
-            <li class="nav-item px-3">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"
-                    ><i class="fa fa-user-o" aria-hidden="true"></i>
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledy="navbarDropdown">
-                    <li>
-                      <a href="./avtorizatia.html" class="dropdown-item"
-                        >Регистрация</a
-                      >
-                    </li>
-                    <li>
-                      <a href="./avtorizatia-reg.html" class="dropdown-item"
-                        >Авторизация</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <div class="footer-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://vk.com/infservice"><i class="fab fa-vk"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
+            <button class="bts btn-1 btn-sep icon-maps"
+              type="button"
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">
+              <i class="fa-solid fa-map-location-dot"></i>
+              Расположение</button>
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+              
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <i class="fa-solid fa-location-dot fa-xl pe-3 " style="color: #dab80b;"></i>
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Корп. 1, наб. реки Екатерингофки, 18<br> Санкт-Петербург, 198035
+                    </h1>
+                    
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.4327319676263!2d30.24447548717762!3d59.901332417314286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630987ac1f2b9%3A0x427737570a7adb7b!2z0JzQtdGC0LDQu9C70L7RgdGC0YDQvtC5!5e0!3m2!1sru!2sru!4v1713608478101!5m2!1sru!2sru" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+
+                  
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -146,47 +146,37 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./img/1.png" class="d-block w-100" alt="..." />
+            <img src="./img/1.jpg" class="d-block w-100" alt="..." />
             <div class="entry-description-container">
               <div class="slider-title-head">
                 <h3 class="entry-title">
                   <a href="#" title="Строительство"
                     ><span
-                      >Что такое разработка программного обеспечения?</span
+                      >Что такое металлоконструкции?</span
                     ></a
                   >
                 </h3>
               </div>
               <div class="entry-content">
                 <p>
-                  Процесс разработки ПО охватывает проектирование, создание
-                  документации, программирование, тестирование и непрерывное
-                  техническое обслуживание программного продукта. Эти
-                  составляющие образуют конвейер рабочего процесса —
-                  последовательность этапов, с помощью которых создаются
-                  высококачественные программные продукты. Такой конвейер
-                  называется жизненным циклом разработки программного
-                  обеспечения.
+                  Металлоконструкции — это изделия из различных металлов и сплавов, которые применяются в строительстве жилых домов, технологических и промышленных сооружений, а также в машиностроении для производства машин, оборудования и механизмов.
                 </p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./img/2.png" class="d-block w-100" alt="..." />
+            <img src="./img/2.jpg" class="d-block w-100" alt="..." />
             <div class="entry-description-container">
               <div class="slider-title-head">
                 <h3 class="entry-title">
                   <a href="#" title="Строительство"
-                    ><span>Инструменты разработки ПО</span></a
+                    ><span>Где изготавливаются металлоконструкции?</span></a
                   >
                 </h3>
               </div>
               <div class="entry-content">
                 <p>
-                  Инструменты разработки ПО полезны на каждом этапе жизненного
-                  цикла разработки, включая управление практиками agile и
-                  DevOps, управление кодом, автоматизацию через CI/CD, реакцию
-                  на инциденты, тестирование и многое другое.
+                  Металлоконструкции изготавливаются в специализированных заводах и производственных предприятиях, которые оборудованы специальным оборудованием для работы с металлом. Такие предприятия могут находиться как в городских индустриальных зонах, так и за пределами населенных пунктов, в зависимости от размеров и специализации производства.
                 </p>
               </div>
             </div>
@@ -198,19 +188,14 @@
                 <h3 class="entry-title">
                   <a href="#" title="Строительство"
                     ><span
-                      >Почему разработка программного обеспечения важна?
+                      >Применение в повседневной жизни
                     </span></a
                   >
                 </h3>
               </div>
               <div class="entry-content">
                 <p>
-                  Разработка программного обеспечения важна, потому что она
-                  помогает компаниям дифференцироваться и быть более
-                  конкурентоспособными. Это может улучшить качество обслуживания
-                  клиентов, быстрее выводить на рынок более инновационные,
-                  многофункциональные продукты, а также сделать операции более
-                  эффективными, безопасными и продуктивными.
+                  Металлоконструкции находят свое применение во многих повседневных сооружениях. Беседки и столбы украшают наши парки и общественные места, обеспечивая тень и опору. Стеллажи и каркасы организуют промышленные склады, оптимизируя хранение. Бамперы и ограждения защищают автомобили и имущество, а пандусы дают доступность. Эти конструкции, изготовленные из металла, отличаются прочностью и надежностью.
                 </p>
               </div>
             </div>
@@ -222,81 +207,203 @@
     <div class="product-details text-center">
       <h1>НАШИ УСЛУГИ</h1>
       <h3>
-        Мы специализируемся на нестандартных <br />
-        задачах, еще не имеющих готовых решений
+        Мы специализируемся на изготовлении <br />
+        высококачественных конструкций с помощью новых технологий
       </h3>
     </div>
-
-    <section class="main-content my-5">
+    <section class="main-content">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-sm-12 mb-3">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
             <div class="product-card">
-              <div class="product-thumb text-center">
-                <a href="#"><img src="./img/3.png" alt="" /></a>
+              <div class="product-thumb">
+                <a href="#"><img src="./img/walker.jpg" alt="" /></a>
               </div>
-              <div class="product-details text-center">
-                <h4>Разработка и программирование</h4>
-                <p>
-                  Разработка программного обеспечения на базе
-                  интернет-технологий
-                </p>
+              <div class="product-details">
+                <h4><a href="http://yugong.ru">Пешеходные ограждения</a></h4>
+                <button type="button" class="btn btn-outline-warning">
+                  Подробнее
+                </button>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-sm-12 mb-3">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
             <div class="product-card">
-              <div class="product-thumb text-center">
-                <a href="#"><img src="./img/4.png" alt="" /></a>
+              <div class="product-thumb">
+                <a href="#"><img src="./img/bar.png" alt="" /></a>
               </div>
-              <div class="product-details text-center">
-                <h4>Информационные системы</h4>
-                <p>
-                  CRM, CMS, ERP, Личные кабинеты, Автоматизированные рабочие
-                  места, Системы учета, Системы контроля, Диспетчерские системы
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 mb-3">
-            <div class="product-card">
-              <div class="product-thumb text-center">
-                <a href="#"><img src="./img/5.png" alt="" /></a>
-              </div>
-              <div class="product-details text-center">
-                <h4>Автоматизация бизнес-процессов</h4>
-                <p>
-                  Автоматизация ваших бизнес-процессов, сокращение ручного труда
-                  и упрощение рутинных процедур
-                </p>
+              <div class="product-details">
+                <h4>
+                  <a href="http://pallets-spb.ru"
+                    >Дорожные барьерные ограждения
+                  </a>
+                </h4>
+                <button type="button" class="btn btn-outline-warning">
+                  Подробнее
+                </button>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-sm-12 mb-3">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
             <div class="product-card">
-              <div class="product-thumb text-center">
-                <a href="#"><img src="./img/6.png" alt="" /></a>
+              <div class="product-thumb">
+                <a href="#"><img src="./img/most.jpg" alt="" /></a>
               </div>
-              <div class="product-details text-center">
-                <h4>Веб-приложения</h4>
-                <p>
-                  Программное обеспечение, требующее для работы только
-                  веб-браузер или мобильное устройство
-                </p>
+              <div class="product-details">
+                <h4>
+                  <a href="http://excurspb.tmweb.ru"
+                    >Мостовые барьерные ограждения</a
+                  >
+                </h4>
+                <button type="button" class="btn btn-outline-warning">
+                  Подробнее
+                </button>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-sm-12 mb-3 ms-auto">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
             <div class="product-card">
-              <div class="product-thumb text-center">
-                <a href="#"><img src="./img/7.png" alt="" /></a>
+              <div class="product-thumb">
+                <a href="#"><img src="./img/gazon.jpg" alt="" /></a>
               </div>
-              <div class="product-details text-center">
-                <h4>Веб-сайты</h4>
-                <p>Создание сайтов средней и высокой степени сложности</p>
+              <div class="product-details">
+                <h4>
+                  <a href="https://polet-remont.ru">Газонные ограждения</a>
+                </h4>
+                <button type="button" class="btn btn-outline-warning">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="product-card">
+              <div class="product-thumb">
+                <a href="#"><img src="./img/fan.jpg" alt="" /></a>
+              </div>
+              <div class="product-details">
+                <h4>
+                  <a href="http://zhadina-school.ru">Фан-барьеры</a>
+                </h4>
+                <button type="button" class="btn btn-outline-warning">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="product-card">
+              <div class="product-thumb">
+                <a href="#"><img src="./img/doroga.jpg" alt="" /></a>
+              </div>
+              <div class="product-details">
+                <h4><a href="https://udeco-spb.ru">Рамные опоры</a></h4>
+                <button type="button" class="btn btn-outline-warning">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="product-card">
+              <div class="product-thumb">
+                <a href="#"><img src="./img/svet.jpg" alt="" /></a>
+              </div>
+              <div class="product-details">
+                <h4><a href="https://mehanik-spb.ru">Светофорные опоры</a></h4>
+                <button type="button" class="btn btn-outline-warning">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="product-card">
+              <div class="product-thumb">
+                <a href="#"><img src="./img/truba.jpg" alt="" /></a>
+              </div>
+              <div class="product-details">
+                <h4>
+                  <a href="https://kea-fighting.ru">Водопропускные трубы</a>
+                </h4>
+                <button type="button" class="btn btn-outline-warning">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="product-card">
+              <div class="product-thumb">
+                <a href="#"><img src="./img/zaklad.jpg" alt="" /></a>
+              </div>
+              <div class="product-details">
+                <h4>
+                  <a href="https://artstroyproekt47.ru">Закладные детали</a>
+                </h4>
+                <button type="button" class="btn btn-outline-warning">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="product-card">
+              <div class="product-thumb">
+                <a href="#"><img src="./img/stroitel.jpg" alt="" /></a>
+              </div>
+              <div class="product-details">
+                <h4>
+                  <a href="https://www.gl-proekt.ru">
+                    Строительные металлоконструкции</a
+                  >
+                </h4>
+                <button type="button" class="btn btn-outline-warning">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="product-card">
+              <div class="product-thumb">
+                <a href="#"><img src="./img/hot_metal.png" alt="" /></a>
+              </div>
+              <div class="product-details">
+                <h4>
+                  <a href="https://cellar-up.com"
+                    >Горячее цинкование металлоконструкций</a
+                  >
+                </h4>
+                <button type="button" class="btn btn-outline-warning">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="product-card">
+              <div class="product-thumb">
+                <a href="#"><img src="./img/rezka.jpg" alt="" /></a>
+              </div>
+              <div class="product-details">
+                <h4>
+                  <a href="https://модуль178.рф">Плазменная резка металла</a>
+                </h4>
+                <button type="button" class="btn btn-outline-warning">
+                  Подробнее
+                </button>
               </div>
             </div>
           </div>
@@ -310,7 +417,7 @@
           <div class="row">
             <div class="col-md-3 col-12 text-center">
               <a href="./index.html">
-                <img class="footer-bar" src="./img/logoza2.png" alt="" />
+                <img class="footer-bar" src="./img/logozar.png" alt="" />
               </a>
             </div>
 
@@ -319,10 +426,8 @@
               <hr class="hr" />
               <ul class="list-unstyled">
                 <li><a href="./index.html">Главная</a></li>
-                <li><a href="./o nas.html">О Нас</a></li>
-                <li><a href="./kontakt.html">Контакты</a></li>
-                <li><a href="./gde nas naiti.html">Расположение</a></li>
-                <li><a href="./uslugi.html">Услуги</a></li>
+                <li><a href="./company.html">О Компании</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
               </ul>
             </div>
 
@@ -333,7 +438,7 @@
                 <li><a href="tel:+7 921 595-52-12">+7 921 595-52-12</a></li>
                 <li><a href="tel:+7 905 266-12-85">+7 905 266-12-85</a></li>
                 <li><a href="tel:+7 952 227-37-29">+7 952 227-37-29</a></li>
-                <li><a href="tel:+7 911 093-32-18">+7 911 093-32-18</a></li>
+                
               </ul>
             </div>
 
@@ -342,7 +447,7 @@
               <hr class="hr" />
               <div class="footer-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://vk.com/infservice"
+                <a href="#"
                   ><i class="fab fa-vk"></i
                 ></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -350,14 +455,11 @@
               </div>
             </div>
             <h1 class="h1 text-center">
-              2003-2022 © Компания Информ Сервис. Все права защищены
+              2003-2024 © Компания Металл-Строй. Все права защищены
             </h1>
           </div>
         </div>
       </section>
     </footer>
-
-    <script src="./js/parol.js"></script>
-    <script src="./js/jquery.js"></script>
   </body>
 </html>
