@@ -13,7 +13,9 @@
     height: 940px;
 }
 
-
+span {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 .carousel-caption h5 {
     text-decoration: none;
@@ -52,11 +54,31 @@ radial-gradient(at 92% 11%, hsla(0,2%,80%,1) 0px, transparent 50%);
   .entry-content {
     margin: 20px;
   }
+
+  .entry-content p{
+	font-family: 'Tahoma', sans-serif;
+  }   
+
+
 .btn {
 	margin-top: 5px;
+
 }
 
-  
+.nt {
+	text-decoration: none;
+	color: #f8b043; 
+}  
+.btn:hover {
+	text-decoration: none;
+	background-color: #3f3d3d;
+}
+.nt:hover{
+	text-decoration: none;
+	color: #f8b043; 
+}  
+
+
 .product-card {
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
 	transition: all .3s;
