@@ -210,3 +210,10 @@ video {
     justify-content: center;
     padding-top: 20px;
 }
+
+.video-container2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
